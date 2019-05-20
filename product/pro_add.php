@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-<link rel="stylesheet" href="./css/pro_add.css">
 <body>
   <div class="container">
   Add Products.
