@@ -30,8 +30,6 @@ if ($pro_image['size'] > 0) {
     }
 }
 
-var_dump($pro_image);
-
 if ($pro_name == '' || preg_match('/^[0-9]+$/',$pro_price) == 0 || $pro_image['size'] > 1000000) {
     echo <<<EOD
         <form>
