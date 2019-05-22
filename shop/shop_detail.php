@@ -51,7 +51,7 @@ require_once('../common/common.php');
         <input type="button" onclick="history.back()" value="Back">
         <input type="hidden" name="pro_name" value="<?php echo $pro_name ?>">
         <input type="hidden" name="pro_code" value="<?php echo $pro_code ?>">
-        数量 : <input type="number" name="lot" step="1" requred>
+        数量 : <input type="number" name="lot" step="1" required>
         <input type="submit" value="カートに入れる">
     </form>
 </body>

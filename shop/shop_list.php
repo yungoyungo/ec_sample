@@ -35,3 +35,6 @@ catch(Exception $e) {
     echo 'I am sorry but something might be wrong on this server..';
     exit();
 }
+
+
+echo '<a href="cart_list.php">カートを見る</a>';

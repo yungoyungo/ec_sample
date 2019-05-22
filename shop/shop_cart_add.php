@@ -56,5 +56,5 @@ EOD;
     exit();
 }
 
-echo '<a href="shop_cart_list.php">Go to Cart</a>
+echo '<a href="cart_list.php">Go to Cart</a>
     <br><a href="shop_list.php">Go to product list</a>';
