@@ -16,7 +16,7 @@ if ($pro_name == '') {
     echo <<< EOD
     Product name : $pro_name
     <br>
-    Product price : $pro_price JPY'
+    Product price : $pro_price JPY
     <br>
 EOD;
 }
