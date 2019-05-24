@@ -11,20 +11,35 @@ $pass = $post['pass'];
 
 $hash = password_hash($pass, PASSWORD_BCRYPT);
 
-echo <<< EOD
+$dbh = connectDB();
+
+$sql = 'select hash from staff where name=?';
+$stmt = $dbh->prepare($sql);
+$data[] = $name;
+$stmt->execute($data);
+
+$dbh = null;
+
+$rec = $stmt->fetch(PDO::FETCH_ASSOC);
+echo 'name : '.$name.'<br>hash:'.$rec[hash].'<br>';
+
+/* echo <<< EOD
 name : $name
 <br>
 pass : $pass
 <br>
 hash : $hash
 <br>
-EOD;
+EOD; */
 
-if(password_verify('password', $hash)) {
-    header('Location:pro_list.php');
-    exit();
+if(password_verify($pass, $rec[hash])) {
+
+    echo '<hr>認証成功<br>
+    <a href="pro_list.php">管理画面へ</a><br>';
+   /*  header('Location:pro_list.php');
+    exit(); */
 }else{
-    echo 'might be wrong!(password is password)<br>';
+    echo 'password wrong!<br>';
 }
 
 

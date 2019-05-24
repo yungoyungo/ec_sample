@@ -15,7 +15,7 @@
 <form method="POST" action="staff_reg.php">
     <input type="text" name="name" placeholder="ユーザー名">
     <input type="password" name="pass" placeholder="パスワード">
-    <input type="submit" value="ログイン">
+    <input type="submit" value="登録">
 </form>
 <hr>
 <a href="../shop/shop_list.php">商品一覧に戻る</a>
